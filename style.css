@@ -1,49 +1,224 @@
-* {
-	margin: 0;
-	padding: 0
+body{
+  font-family:"Arial","Helvetica";
+  font-size:15px;
+  margin:3% 0% 15% 0%;
+  padding:0;
+  color:white;
 }
-body {
-	font: 13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	color: #444;
-	background: #B17E4F
-}
-ul {
-	display: flex;
-	justify-content: center;
-	text-decoration: none;
-	list-style: none;
-}
-
-li{
-	background-color:black;
-	padding: 10px 0px;
-	text-decoration: none;
-}
-a{
-	text-decoration:none;
-	color:white;
-	padding: 10px 40px;
-}
-nav ul li a:hover {
-	background: #1B3039
-}
-
-nav ul li .active {
-	background: #1B3039
-}
-img {
-	width: 676px;
-	height: 200px;
+html{
+	overflow:hidden;
 	
 }
 
- h4 {
-	padding-left: 95px;
-	font-size: 20px;
-	line-height: 20px;
-	color: #FFF;
-	background: #5D9EBD;
-	border: 1px solid #5692AE;
-	left:830px;
-	position: fixed;
+.e{
+  background:url("back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+h1{
+    color:white;
+	font-size:90px;
+  }
+
+.d{
+	font-size:10px;
+	color:white;
+	bottom:0px;
+	
+}
+
+
+h3{
+  font-size:26px;
+  background:linear-gradient(149deg, yellow 2%, blue 42%, white 72%, red 96%);
+  -webkit-background-clip:text;
+   animation: gradient 10s infinite linear;
+    background-size: 1000%; 
+  -webkit-text-fill-color:transparent;
+
+}
+
+
+@keyframes gradient {
+    0% {	
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
+
+.s{
+	display:inline-block;
+	color:white;
+}
+button{
+	color:white;
+	outline: none;
+	border:none;
+	border-radius:10px;
+	background-color: transparent;
+	position:left;
+}
+.button1:hover{
+	background-color:black;
+	color:white;
+	border-radius:10px;
+	 border: none;
+	 outline: none;
+	 transition: all 1s;
+	cursor: pointer;
+	position:left;
+}
+
+.button2:hover{
+	background-color:#FFA500;
+	color:white;
+	border-radius:10px;
+	 border: none;
+	 outline: none;
+	 transition: all 1s;
+	cursor: pointer;
+}
+
+.button3:hover{
+	background-color:#4682B4;
+	color:white;
+	border-radius:10px;
+	 border: none;
+	 outline: none;
+	 transition: all 1s;
+	cursor: pointer;
+}
+
+.button4:hover{
+	background-color:#D3D3D3;
+	color:white;
+	border-radius:10px;
+	 border: none;
+	 outline: none;
+	 transition: all 1s;
+	cursor: pointer;
+}
+
+.button5:hover{
+	background-color:#A52A2A;
+	color:whhite;
+	border-radius:10px;
+	 border: none;
+	 outline: none;
+	 transition: all 1s;
+	cursor: pointer;
+}
+
+.button6:hover{
+	background-color:black;
+	color:white;
+	border-radius:10px;
+	 border: none;
+	 outline: none;
+	 transition: all 1s;
+	cursor: pointer;
+}
+
+a{
+	text-decoration:none;
+	color:white;
+	
+}
+iframe{
+	width:1520px;
+	height:430px;
+	overflow:hidden;
+	border:none;
+}
+img{	
+	width:300px;
+	height:200px;
+	float:left;
+	
+}
+img1{
+	width:200px;
+	height:100px;
+	float:left;
+}
+p{
+	font-size:15px;
+	color:white;
+}
+div{
+	color:white;	
+	
+}
+
+textarea{
+	width:400px;
+	height:300px;
+}
+
+@media (max-width:991px){
+  .article-item,.article-item:nth-child(odd){
+    flex-direction:column-reverse;
+  }
+  
+   h3{
+  font-size:26px;
+  background:linear-gradient(149deg, yellow 2%, blue 42%, white 72%, red 96%);
+  -webkit-background-clip:text;
+   animation: gradient 10s infinite linear;
+    background-size: 1000%; 
+  -webkit-text-fill-color:transparent;
+
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
+  
+}
+@media (max-width:575px){
+  body{
+    background-color:#fff;
+    margin:0;
+  }
+  
+ 
+  
+  h1{
+    color:white;
+  }
+  
+  h3{
+    background: #484747;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+}
+p{
+  color:#5d5d5d;
+  text-indent:15px;
+}
+.d{
+	padding:100px;
+	
+}
+
+*::selection {
+	color: white;
+	background-color: black;
 }
